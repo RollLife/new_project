@@ -1,0 +1,5 @@
+http://ibabo.tistory.com/249
+
+https://sites.google.com/site/loveshoby/java-choice-awt-example  - drop down list에 대한 글
+
+http://www.java2s.com/Code/Java/Swing-JFC/Usingdropdownlists.htm
