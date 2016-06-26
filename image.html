@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>한양공고 위치</title>
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDExq4O3zyxAp88ENgGCYeYwi3YkJ8ckvU&callback=initMap"></script>
+ <script>
+  function initialize() {
+  var myLatlng = new google.maps.LatLng(37.565539,127.0120206);
+  var mapOptions = {
+        zoom: 17,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+  var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: "한양공고"
+});
+  }
+ </script>
+</head>
+
+<body onload="initialize()">
+ <div id="map_canvas"style="width:100%; height:800px;"></div>
+ <a href ="../index.html"><button type="button" name="button" style="margin:auto;">되돌아가기</button></a>
+<!--https://developers.google.com/maps/documentation/javascript/get-api-key#key 구글 지도 API 활성화  -->
+</body>
+</html>
